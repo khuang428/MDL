@@ -63,6 +63,31 @@ void my_main() {
 
   for (i=0;i<lastop;i++) {  
     switch (op[i].opcode) {
+    case PUSH :
+      push(s);
+      break;
+    case POP :
+      pop(s);
+      break;
+    case MOVE :
+      break;
+    case ROTATE :
+      break;
+    case SCALE :
+      break;
+    case BOX :
+      break;
+    case SPHERE :
+      break;
+    case TORUS :
+      break;
+    case LINE :
+      break;
+    case SAVE :
+      break;
+    case DISPLAY :
+      display(t);
+      break;
     }
   }
 }
