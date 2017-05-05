@@ -70,20 +70,50 @@ void my_main() {
       pop(s);
       break;
     case MOVE :
+
+      matrix_mult(peek(s), tmp);
+      copy_matrix(tmp, peek(s));
+      tmp->lastcol = 0;
       break;
     case ROTATE :
+
+      matrix_mult(peek(s), tmp);
+      copy_matrix(tmp, peek(s));
+      tmp->lastcol = 0;
       break;
     case SCALE :
+
+      matrix_mult(peek(s), tmp);
+      copy_matrix(tmp, peek(s));
+      tmp->lastcol = 0;
       break;
     case BOX :
+
+      matrix_mult(peek(s),tmp);
+      draw_polygons(tmp,t,g);
+      tmp->lastcol = 0;
       break;
     case SPHERE :
+
+      matrix_mult(peek(s),tmp);
+      draw_polygons(tmp,t,g);
+      tmp->lastcol = 0;
       break;
     case TORUS :
+
+      matrix_mult(peek(s),tmp);
+      draw_polygons(tmp,t,g);
+      tmp->lastcol = 0;
       break;
     case LINE :
+
+      matrix_mult(peek(s),tmp);
+      draw_lines(tmp,t,g);
+      tmp->lastcol = 0;
       break;
     case SAVE :
+
+      save_extension(t, line);
       break;
     case DISPLAY :
       display(t);
