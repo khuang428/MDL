@@ -115,7 +115,7 @@ void my_main() {
       draw_lines(tmp,t,g);
       tmp->lastcol = 0;
     case SAVE :
-      save_extension(t,"file");
+      save_extension(t,"op[i].op.save.p->name");
     case DISPLAY :
       display(t);
     }
